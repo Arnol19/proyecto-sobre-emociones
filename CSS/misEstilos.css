@@ -1,0 +1,396 @@
+.fmenu{
+    font-family: "Edu AU VIC WA NT Pre", cursive !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Asegúrate de que el icono sea visible */
+}
+
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+#servicios {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#servicios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#servicios p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#servicios ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#servicios li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#servicios li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+#servicios li strong {
+    color: #007bff;
+}
+
+/* Estilos generales para el área de contacto */
+.contact-options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: #4CAF50; /* Verde para WhatsApp y similar */
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los iconos */
+.contact-link i {
+    margin-right: 10px;
+}
+
+/* Cambios de color al pasar el ratón */
+.contact-link:hover {
+    background-color: #45a049;
+}
+
+/* Colores específicos para cada plataforma */
+.contact-link:nth-child(1) { /* WhatsApp */
+    background-color: #25D366;
+}
+
+.contact-link:nth-child(2) { /* Instagram */
+    background-color: #C13584;
+}
+
+.contact-link:nth-child(3) { /* Facebook */
+    background-color: #4267B2;
+}
+
+.contact-link:nth-child(4) { /* Teléfono */
+    background-color: #008CBA;
+}
+
+/* Estilo general del modal */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background: linear-gradient(135deg, #B3D9FF, #E1F5FE); /* Fondo azul claro suave */
+    color: #333333; /* Texto oscuro para buen contraste */
+    padding: 20px;
+  }
+  
+  /* Título del modal */
+  .modal-header {
+    background-color: #4CAF50; /* Verde calmante */
+    border-bottom: 1px solid #8BC34A; /* Verde suave */
+  }
+  
+  .modal-title {
+    font-family: 'Poppins', sans-serif; /* Fuente amigable y moderna */
+    font-size: 1.8rem;
+    color: #fff; /* Blanco para el texto */
+  }
+  
+  /* Botón de cerrar */
+  .modal-header .btn-close {
+    background-color: #FFEB3B; /* Amarillo suave */
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: #fff; /* Blanco */
+  }
+  
+  .modal-header .btn-close:hover {
+    background-color: #FFEB3B; /* Amarillo suave */
+    color: #000000; /* Negro para mayor visibilidad */
+  }
+  
+  /* Texto del formulario */
+  .modal-body form {
+    padding: 15px;
+    color: #333333; /* Texto en color oscuro para facilitar la lectura */
+  }
+  
+  /* Estilo de campos de entrada */
+  .form-control {
+    border-radius: 8px;
+    background: #E1F5FE; /* Fondo azul claro */
+    border: 1px solid #4CAF50; /* Borde verde suave */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    color: #333333; /* Texto oscuro */
+  }
+  
+  .form-control:focus {
+    border-color: #80E27E; /* Verde más claro */
+    box-shadow: 0 0 5px rgba(128, 226, 126, 0.5); /* Efecto suave */
+  }
+  
+  /* Botones del modal */
+  .modal-footer .btn-secondary {
+    background-color: #B3D9FF; /* Fondo azul claro */
+    color: #333333; /* Texto oscuro */
+    border: none;
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #4CAF50; /* Verde suave */
+    color: #fff; /* Blanco */
+  }
+  
+  .modal-footer .btn-primary {
+    background-color: #80E27E; /* Verde claro */
+    color: #fff; /* Texto blanco */
+    border: none;
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #66BB6A; /* Verde más fuerte */
+    color: #000000; /* Texto oscuro */
+  }
+  
+  /* Estilo de la imagen de perfil */
+  .profile-image {
+    display: inline-block;
+    background: linear-gradient(135deg, #B3D9FF, #80E27E); /* Fondo suave con degradado */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Imagen circular */
+    border: 3px solid #80E27E; /* Borde verde suave */
+    box-shadow: 0 4px 8px rgba(128, 226, 126, 0.5); /* Sombra de borde suave */
+    object-fit: cover; /* Asegura el ajuste perfecto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.05); /* Zoom suave al pasar el cursor */
+    box-shadow: 0 6px 12px rgba(128, 226, 126, 0.7); /* Sombra más pronunciada */
+  }
+  
+  /* Estilos de botones para la imagen */
+  #insertImageButton, #changeImageButton {
+    background-color: #4CAF50; /* Botón verde */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+  }
+  
+  #insertImageButton:hover, #changeImageButton:hover {
+    background-color: #66BB6A; /* Verde más fuerte */
+    transform: translateY(-2px); /* Sutil efecto de elevación */
+  }
+  
+  /* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Menú */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Estilo para el modal */
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-body {
+    background-color: #f8f9fa;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+}
+
+.modal-footer button {
+    border-radius: 5px;
+}
+
+/* Estilo para el formulario */
+input[type="text"], input[type="email"], input[type="password"], select {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Estilo para la imagen de perfil */
+.profile-image img {
+    border-radius: 50%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button#insertImageButton, button#changeImageButton {
+    margin-top: 10px;
+}
+
+
+/* Estilo de la sección principal */
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+h5 {
+    color: #6c757d;
+}
+
+/* Estilo para los enlaces del menú de navegación */
+.navbar-nav .nav-link.active {
+    color: #007bff !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .modal-dialog {
+        max-width: 90%;
+    }
+    
+    main {
+        padding: 15px;
+    }
+    
+    footer {
+        padding: 10px;
+    }
+}
